@@ -41,12 +41,12 @@
           	// 2. 만약 가져온 값에 @가 있으면 (indexOf를 이용하기 - 찾아보자!)
             if (email.indexof('@') == -1) {
               $('#warning-q5').show();
-              $('#warning-q5').hide();
+              $('#domain-q5').hide();
             } else {
               var domain = email.split('@')[1].split('.')[0];
               $('#domain-q5').text(domain);
-              $('#domain-q5').show(domain);
-             $('#domain-q5').hide(domain);
+              $('#domain-q5').show();
+             $('#warning-q5').hide();
             }
           	// 3. info.spartacoding@gmail.com -> gmail 만 추출해서
           	// 4. domain-q5의 텍스트를 gmail로 바꿔준다. (jQuery의 $(...).text('문자열')을 이용하면 굿!)
